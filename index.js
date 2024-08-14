@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
   res.send("Hello world!");
 });
 
-const Discord = require("index1.js");
+const Discord = require("discord.js");
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
 
 client.on("ready", () => {
